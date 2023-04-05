@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DO SHOPPING</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="px-18 sm:px-24 grid grid-cols-1 md:px-[unset] md:grid md:grid-cols-4"
+    >
+      <div class="md:col-start-2 md:col-span-2 border-2 border-gray-200 m-2">
+        <div>
+          <p
+            class="py-4 text-center text-[#54c9f4] font-bold tracking-wider text-2xl"
+          >
+            SHOPPING LIST
+          </p>
+          <p
+            class="py-4 text-center text-gray-700 font-bold tracking-wider text-xl"
+          >
+            Chima playing with Fire-(base)
+          </p>
+        </div>
+        <div
+          class="w-[200px] bg-cover bg-center bg-no-repeat h-[200px] rounded-full border-2 border-blue-300 mx-auto"
+          style="background-image: url(../images/cart.jpg)"
+        ></div>
+        <div class="grid grid-cols-1 gap-y-2 p-4">
+          <input
+            type="text"
+            class="text-gray-500 px-2 py-2 bg-gray-200 rounded text-center"
+            style="outline: none"
+            id="input1"
+          />
+          <button
+            class="border-[1px] bg-red-900 text-white font-semibold tracking-wider rounded border-zinc-200 py-2 hover:bg-red-800"
+            id="btn1"
+          >
+            Add to cart
+          </button>
+        </div>
+        <div class="p-4 grid grid-cols-3 gap-2"
+        id="list"
+        >
+
+
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
